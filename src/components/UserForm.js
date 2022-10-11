@@ -30,9 +30,20 @@ const UserForm = ({ handleUserFormSubmit }) => {
   return (
     <>
       <Container className="default-margin">
+        <Row
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "3rem",
+            fontWeight: "bolder",
+          }}
+        >
+          User Registration
+          <hr />
+        </Row>
         <Row>
-          <Col sm={6}>
-            <h2 className="text-center" style={{ marginTop: "1rem" }}>User Form</h2>
+          <Col sm={{ span: "8", offset: "2" }}>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Name</Form.Label>

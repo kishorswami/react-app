@@ -93,7 +93,7 @@ export default class TodoList extends Component {
           </Row>
           <hr />
           <Row>
-            <Col md={{ span: 5, offset: 4 }}>
+            <Col md={{ span: 6, offset: 3 }}>
               <InputGroup className="mb-3">
                 <FormControl
                   placeholder="add item . . . "
