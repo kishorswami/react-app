@@ -32,6 +32,9 @@ const Header = () => {
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
+              <Nav.Link as={Link} to="/product-app">
+                Manage Product List
+              </Nav.Link>
               <Nav.Link as={Link} to="/user-app">
                 Manage User
               </Nav.Link>
