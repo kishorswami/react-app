@@ -110,7 +110,7 @@ export default class TodoList extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={{ span: 5, offset: 4 }}>
+            <Col md={{ span: 6, offset: 3 }}>
               <ListGroup>
                 {this.state.lists.map((item) => {
                   const { id, userInput, isDone } = item;
