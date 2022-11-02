@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <Navbar bg="" expand="lg" fixed="top" className="custom-navbar">
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Nav.Link as={Link} to="/">
             <img
               alt=""
               src={mainLogo}
@@ -22,7 +22,7 @@ const Header = () => {
               height="50"
               className="d-inline-block align-top"
             />{" "}
-          </Navbar.Brand>
+          </Nav.Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse
             className="justify-content-end"
@@ -43,6 +43,9 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link as={Link} to="/todo-app">
                 Manage TodoList
+              </Nav.Link>
+              <Nav.Link as={Link} to="/quiz">
+                Manage Quiz
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

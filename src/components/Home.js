@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Container className="default-margin">
         <Row>
-          <Col sm="8">
+          <Col sm="6">
             <Carousel>
               <Carousel.Item>
                 <img
@@ -52,6 +52,46 @@ const Home = () => {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
+          </Col>
+          <Col sm="6">
+            <h3>List of content</h3>
+            <div class="ui celled list">
+              <div class="item">
+                <i class="large github middle aligned icon"></i>
+                <div class="content">
+                  <Link class="header" to='/'>Home</Link>
+                  <div class="description">Updated 10 mins ago</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large github middle aligned icon"></i>
+                <div class="content">
+                  <Link class="header" to='/product-app'>Manage Product List</Link>
+                  <div class="description">Updated 22 mins ago</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large github middle aligned icon"></i>
+                <div class="content">
+                  <Link class="header" to='/counter-app'>Manage Counter</Link>
+                  <div class="description">Updated 34 mins ago</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large github middle aligned icon"></i>
+                <div class="content">
+                  <Link class="header" to='/todo-app'>Manage Todos</Link>
+                  <div class="description">Updated 34 mins ago</div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large github middle aligned icon"></i>
+                <div class="content">
+                  <Link class="header" to='/quiz'>Quiz</Link>
+                  <div class="description">Updated 34 mins ago</div>
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

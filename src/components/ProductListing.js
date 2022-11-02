@@ -17,7 +17,7 @@ const ProductListing = () => {
 
     return (
         <>
-            <div className='ui grid container default-margin'>
+            <div className='ui stackable four column grid container default-margin'>
                 <ProductItem />
             </div>
         </>

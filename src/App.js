@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import TodoList from "./components/TodoList";
 import ProductListing from "./components/ProductListing";
 import ProductDetails from "./components/ProductDetails";
+import Quiz from './components/Quiz';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/todo-app" element={<TodoList />} />
           <Route exact path="/product-app" element={<ProductListing />} />
           <Route exact path="/product-app/:productId" element={<ProductDetails />} />
+          <Route exact path="/quiz" element={<Quiz />} />
         </Routes>
       </Router>
     </>

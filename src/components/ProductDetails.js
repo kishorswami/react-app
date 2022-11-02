@@ -27,6 +27,7 @@ const ProductDetails = () => {
             dispatch(removeSelectedProduct());
         };
     }, [productId])
+    
 
     return (
         <div className="ui grid container default-margin">
