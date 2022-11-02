@@ -53,7 +53,7 @@ const Home = () => {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col sm="6">
+          <Col sm="6" className='mt10'>
             <h3>List of content</h3>
             <div class="ui celled list">
               <div class="item">
