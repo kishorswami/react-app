@@ -7,6 +7,7 @@ import TodoList from "./components/TodoList";
 import ProductListing from "./components/ProductListing";
 import ProductDetails from "./components/ProductDetails";
 import Quiz from './components/Quiz';
+import PaginationListing from "./components/PaginationListing";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/product-app" element={<ProductListing />} />
           <Route exact path="/product-app/:productId" element={<ProductDetails />} />
           <Route exact path="/quiz" element={<Quiz />} />
+          <Route exact path="/pagination-listing" element={<PaginationListing />} />
         </Routes>
       </Router>
     </>
