@@ -34,7 +34,7 @@ const PaginationListing = () =>{
 
 	return(
 		<>
-			<div className='container mt-5'>
+			<div className='container default-margin'>
 				<h1 className='text-center'>Posts</h1>
 				<PostItem posts={currentPosts} loading={loading} handleRemovePost={handleRemovePost}/>
 				<Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>
