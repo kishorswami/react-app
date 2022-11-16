@@ -59,7 +59,7 @@ const Home = () => {
               <div class="item">
                 <i class="large github middle aligned icon"></i>
                 <div class="content">
-                  <Link class="header" to='/'>Home</Link>
+                  <Link class="header" to='/home'>Home</Link>
                   <div class="description">Updated 10 mins ago</div>
                 </div>
               </div>

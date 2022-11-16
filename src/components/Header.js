@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <Navbar bg="" expand="lg" fixed="top" className="custom-navbar">
         <Container fluid>
-          <Nav.Link as={Link} to="/">
+          <Nav.Link as={Link} to="/home">
             <img
               alt=""
               src={mainLogo}
@@ -29,7 +29,7 @@ const Header = () => {
             id="basic-navbar-nav"
           >
             <Nav>
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/home">
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="/product-app">
