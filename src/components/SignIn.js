@@ -19,8 +19,17 @@ function Copyright(props) {
 }
 const SignIn = () => {
 	const[islogged,setIsLogin] = useState(false);
+	const[email,setEmail] = useState('');
+	const[password,setPassword] = useState('');
+
 	const handleSubmit = (event) => {
 	    event.preventDefault();
+
+	    if (email === '' || password === '') {
+	    	alert('Email & password can not  be empty.');
+	    	return false;
+	    }
+
 	    const data = new FormData(event.currentTarget);
 	    console.log({
 	      email: data.get('email'),
@@ -70,6 +79,7 @@ const SignIn = () => {
 			            </Typography>
 			            <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
 			              <TextField
+			                value={email}
 			                margin="normal"
 			                required
 			                fullWidth
@@ -78,8 +88,10 @@ const SignIn = () => {
 			                name="email"
 			                autoComplete="email"
 			                autoFocus
+			                onChange={(e) =>{setEmail(e.target.value)}}
 			              />
 			              <TextField
+			                value={password}
 			                margin="normal"
 			                required
 			                fullWidth
@@ -88,6 +100,7 @@ const SignIn = () => {
 			                type="password"
 			                id="password"
 			                autoComplete="current-password"
+			                onChange={(e) =>{setPassword(e.target.value)}}
 			              />
 			              <FormControlLabel
 			                control={<Checkbox value="remember" color="primary" />}
